@@ -1,0 +1,57 @@
+$color: red;
+.login_page {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .bt_login_gg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 120px;
+    width: 120px;
+    border-radius: 60px;
+    border: 1px solid #ea4335;
+    cursor: pointer;
+    animation: ripple 0.7s linear infinite;
+    @keyframes ripple {
+      0% {
+        box-shadow: 0 0 0 0 rgba(#ea4335, 0.3), 0 0 0 1em rgba(#ea4335, 0.3),
+          0 0 0 2em rgba(#ea4335, 0.3), 0 0 0 3em rgba(#ea4335, 0.3);
+      }
+      100% {
+        box-shadow: 0 0 0 1em rgba(#ea4335, 0.3), 0 0 0 2em rgba(#ea4335, 0.3),
+          0 0 0 3em rgba(#ea4335, 0.3), 0 0 0 4em rgba(#ea4335, 0);
+      }
+    }
+    p {
+        color: black;
+        margin: 0;
+        font-weight: bolder;
+    }
+    span {
+      font-weight: bolder;
+    }
+    span:nth-child(1) {
+      color: #4285f4;
+    }
+    span:nth-child(2) {
+      color: #ea4335;
+    }
+    span:nth-child(3) {
+      color: #fbbc05;
+    }
+    span:nth-child(4) {
+      color: #4285f4;
+    }
+    span:nth-child(5) {
+      color: #34a853;
+    }
+    span:nth-child(6) {
+      color: #ea4335;
+    }
+  }
+}

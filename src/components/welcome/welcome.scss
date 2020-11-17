@@ -1,0 +1,19 @@
+.welcome {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    h1 {
+        font-size: 70px;
+        margin-bottom: 100px;
+        color: #62656a;
+        margin: 0;
+    }
+    h2 {
+        font-size: 40px;
+        margin: 0;
+    }
+    a {
+        color: #15b2ff;
+    }
+}

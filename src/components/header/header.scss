@@ -1,0 +1,84 @@
+.header {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    padding: 10px;
+    background-color: #fafafb;
+    -webkit-box-shadow: 0px 6px 9px -11px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 6px 9px -11px rgba(0,0,0,0.75);
+    box-shadow: 0px 6px 9px -11px rgba(0,0,0,0.75);
+    .user_info {
+        align-items: center;
+        display: flex;
+        justify-content: flex-end;
+        padding-left: 15px;
+        padding-right: 20px;
+        h1 {
+            font-size: 14px;
+            color: black;
+            margin-right: 10px;
+        }
+        .icon_dropdown {
+            height: 15px;
+            width: 15px;
+        }
+        .drop_down {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            .avt {
+                height: 40px;
+                width: 40px;
+                border-radius: 20px;
+                border: 0.5px solid gray;
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                margin-right: 10px;
+                border: 2px solid white;
+                cursor: pointer;
+                &:hover {
+                    border: 2px solid gray;
+                }
+                &.show {
+                    border: 2px solid gray;
+                }
+            }
+            .ul_action {
+                &.hide {
+                    li {
+                        display: none;
+                    }
+                }
+                &.show {
+                    border: 1px solid #d6d8d9;
+                    li {
+                        display: flex;
+                    }
+                }
+            }
+
+            .ul_action {
+                position: absolute;
+                left: -192px;
+                top: 30px;
+                list-style: none;
+                padding-inline-start: 0;
+                width: 185px;
+                border-radius: 4px;
+                box-shadow: 4px 4px 16px 0 rgba(0,31,46,.16);
+                background-color: #fff;
+                overflow: hidden;
+                li {
+                    padding: 10px 0 10px 5px;
+                    text-align: left;
+                    cursor: pointer;
+                    &:hover {
+                        background-color: #ebecec;
+                    }
+                }
+            }
+        }
+        
+    }
+}
